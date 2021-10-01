@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("Web-site-Designers.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<body>
+  <div class="parallax"></div>
+
+<div style="height:200px;background-color: #42413Cad !important;
+font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<!-- Slide Show -->
+
+<section>
+  <img class="mySlides" src="6_UX_Design_Elements_to_Include_for_a_Powerful_Web_Design_-_EWM_SA_.jpg" style="width:100%">
+  <img class="mySlides" src="best-agency-websites-scaled.jpg" style="width:100%">
+  <img class="mySlides" src="Web-site-Designers.jpg" style="width:100%">
+</section>
+
+<style>
+  h2 {text-align: center;}
+  p {text-align: center;}
+  </style
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">The Begining of Coding</h2>
+  <p class="w3-opacity"><i>“Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.” – Antoine de Saint-Exupery</i></p>
+</section>
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+</script>
+
+</body>
+</html>

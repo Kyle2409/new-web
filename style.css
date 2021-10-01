@@ -1,0 +1,207 @@
+/* The <ul> tag defines an unordered (bulleted) list */
+ul {
+    /* Remove list bullets */
+    list-style-type: none;
+    
+    /* The CSS margin properties are used to create space around elements, outside of any defined borders */
+    margin: 0;
+    
+    /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
+    padding: 0;
+    
+    /* The overflow property specifies what should happen if content overflows an element's box. */
+    overflow: hidden;
+    
+    /*  */
+    background-color: #333;
+}
+/* The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>). */
+li {
+    /* The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. */
+    float: left;
+}
+/* The <a> tag defines a hyperlink, which is used to link from one page to another. */
+li a {
+    /* The display property specifies the display behavior (the type of rendering box) of an element. */
+    display: block;
+    
+    /*  */
+    color: white;
+    
+    /* The text-align property specifies the horizontal alignment of text in an element. */
+    text-align: center;
+    
+    /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
+    padding: 14px 16px;
+    
+    /* The text-decoration property specifies the decoration added to text */
+    text-decoration: none;
+}
+/* The :hover selector is used to select elements when you mouse over them. */
+li a:hover {
+    /*  */
+    background-color: #666;
+}
+
+li a .active {
+    /*  */
+    background-color: #111;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("Web-site-Designers.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("Web-site-Designers.jpg");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("Web-site-Designers.jpg");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+  div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+@import "compass/css3";
+
+
+
+.static-img {
+  display: block; 
+}
+
+iframe {
+   max-width: 100%; 
+}
+.map-container {
+  width: 100%;
+  margin: auto;
+  height: 0;
+  padding-top: 38%;
+  position: relative;
+  display: none; /* Hide for small screens */
+  iframe {
+    width: 100%;
+    height: 100%; /* had to specify height/width */
+    position: absolute;
+    top: 0; 
+    right: 0;
+    left: 0; 
+    bottom: 0;   
+  }
+}
+
+/* Medium Screens */
+@media all and (min-width: 34.375em) {
+  .map-container {
+    display: block;
+  } 
+  .static-img {
+    display: none; 
+  }
+}
+.background {
+    background-image: url("comrawpixel1015303.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(20px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg-image {
+    /* The image used */
+    background-image: url("comrawpixel1015303.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
