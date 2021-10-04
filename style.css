@@ -1,5 +1,6 @@
 /* The <ul> tag defines an unordered (bulleted) list */
 ul {
+  font-family: Arial, Helvetica, sans-serif;
     /* Remove list bullets */
     list-style-type: none;
     
@@ -7,13 +8,14 @@ ul {
     margin: 0;
     
     /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
-    padding: 0;
+    padding: 100;
     
+    font-size: large;
     /* The overflow property specifies what should happen if content overflows an element's box. */
     overflow: hidden;
     
     /*  */
-    background-color: #333;
+    background-color: transparent;
 }
 /* The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>). */
 li {
@@ -27,6 +29,8 @@ li a {
     
     /*  */
     color: white;
+
+    text-size-adjust: 200px;
     
     /* The text-align property specifies the horizontal alignment of text in an element. */
     text-align: center;
@@ -52,7 +56,12 @@ body, html {
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
   }
   
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -131,6 +140,13 @@ form
 
 iframe {
    max-width: 100%; 
+   width: 100%;
+  height: 100%; /* had to specify height/width */
+  position: absolute;
+  top: 0; 
+  right: 0;
+  left: 0; 
+  bottom: 0;  
 }
 .map-container {
   width: 100%;
@@ -139,15 +155,8 @@ iframe {
   padding-top: 38%;
   position: relative;
   display: none; /* Hide for small screens */
-  iframe {
-    width: 100%;
-    height: 100%; /* had to specify height/width */
-    position: absolute;
-    top: 0; 
-    right: 0;
-    left: 0; 
-    bottom: 0;   
-  }
+  
+  
 }
 
 /* Medium Screens */
@@ -191,17 +200,3 @@ iframe {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-} 
