@@ -13,7 +13,7 @@
   type = "image/x-icon">
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link class="centre" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <ul>
@@ -22,7 +22,6 @@
   <li><a class="active" href="contact.html">Contact</a></li>
 </ul>
 <div class="form">
-<h1>Contact</h1>
 <html>
 <body style="background-color:mediumslateblue"  >
 
@@ -31,7 +30,8 @@
   action="https://formspree.io/f/xknkegbe"
   method="POST"
 >
-
+<fieldset>
+  <legend style="text-align: center;">Contact Us</legend>
     <label for="Fname">First Name :</label><br>
     <input type="Fname" id="" name="Fname" placeholder="Enter First Name....." required><br><br>
     <label for="lname">Last Name:</label><br>
@@ -49,83 +49,22 @@
       
       <label for="Textarea">Subject:</label><br>
       <textarea rows="4" cols="50" name="comment" placeholder="Enter message here.."> </textarea><br>
-          <input type="submit" value="Sign up">
+          <input type="submit" value="Submit">
           <input type="hidden" id="custId" name="custId" value="12345"> <br>
 
                                 
-          
-</form>
+        </fieldset>  
+</form><br><br><br><br><br><br><br><br><br><br>
+<!-- Add font awesome icons -->
+  <legend style="color: black;">Contact us on Social Media</legend>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
 </div>
-
-<style>
-
-  .fa {
-    padding: 30px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: oldlace;
-    margin: 100px 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-    text-align: center;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-  
-  .fa-pinterest {
-    background: #cb2027;
-    color: white;
-    text-align: center;
-  }
-  
-  .fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
- </style>
- <a href="#" class="fa fa-facebook"></a>
- <a href="#" class="fa fa-twitter"></a>
- <a href="#" class="fa fa-google"></a>
- <a href="#" class="fa fa-linkedin"></a>
- <a href="#" class="fa fa-youtube"></a>
- <a href="#" class="fa fa-instagram"></a>
- <a href="#" class="fa fa-pinterest"></a>
- <a href="#" class="fa fa-snapchat-ghost"></a>
-
 </body>
-  
   
 </div>
 </html>
