@@ -11,7 +11,7 @@
   <link rel = "icon" href = 
 "64641314.png" 
   type = "image/x-icon">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contact.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -31,12 +31,14 @@
   action="https://formspree.io/f/xknkegbe"
   method="POST"
 >
-<fieldset>
+<fieldset  style="border-radius: 10px;" >
   <legend>Contact Us</legend>
     <label for="Fname">First Name :</label><br>
     <input type="Fname" id="" name="Fname" placeholder="Enter First Name....." required><br><br>
     <label for="lname">Last Name:</label><br>
     <input type="lname" id="" name="lname" placeholder="Enter Last Name....." required><br><br>
+    <label for="lname">Email <Address></Address>:</label><br>
+    <input type="Email" id="" name="Email" placeholder="Enter Email Address....." required><br><br>
     <label for="Country">City:</label><br>
     <select name="Country" id="Country" placeholder="Select your Country">
         <option> Select your City</option>
@@ -62,13 +64,42 @@
 
 </body>
 <br><br><br><br><br><br><br><br><br><br>
-<div class="footer">
-  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-  <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
-  <a href="https://www.google.com/" class="fa fa-google"></a>
-  <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
-  <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-  <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<footer class="ct-footer">
+  <div class="container">
+      <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+          <div class="ct-footer-pre text-center-lg">
+              <div class="inner">
+                  <span>Join my journey to receive updates and all exciting news!</span>
+              </div>
+              <div class="inner">
+                  <div class="form-group">
+                      <input name="formfields[nl_email]" id="nl_email" class="validate[required]" placeholder="Enter your email address" type="text" value=""> <label for="nl_email" class="sr-only">Email Address</label> <button type="submit" class="btn btn-motive">Join</button>
+                  </div>
+              </div>
+          </div>
+      </form>
+     
+              <div class="Socials">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+                <a href="https://www.google.com/" class="fa fa-google"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="ct-footer-post">
+      <div class="container">
+          
+          <div class="inner-right">
+              <p>
+                  <a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by Kyle Mc Bryne
+              </p>
+          </div>
+      </div>
+  </div>
 </footer>
   </div>
   
